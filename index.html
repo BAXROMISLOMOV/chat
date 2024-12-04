@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+  <link rel="stylesheet" href="./style.css">
+  <title></title>
+</head>
+<body>
+  <div id="nameSelection" class="name-selection">
+    <h2>Choose Your Name</h2>
+    <button onclick="setUserName('Alice')">Alice</button>
+    <button onclick="setUserName('Bob')">Bob</button>
+  </div>
+
+  <div id="chatContainer" class="chat-container" style="display: none;">
+    <div class="messages" id="messages"></div>
+    <input type="text" id="messageInput" placeholder="Type a message..."/>
+    <button onclick="sendMessage()">Send</button>
+    <button onclick="changeUserName()" class="switch-name">Change Name</button>
+  </div>
+
+  
+   
+  <script src="./script.js"></script>
+</body>
+</html>
